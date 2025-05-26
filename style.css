@@ -69,7 +69,7 @@ main{
     width: 150px;
     height: 150px;
     border-radius: 50%;
-    background-color: black;
+    border: 1px solid black;
     margin-left: 50px;
     margin-right: 150px;
 }
