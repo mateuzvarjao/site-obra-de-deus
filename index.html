@@ -15,59 +15,105 @@
     <title>Obra de Deus</title>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg ">
-        <div class="container-fluid">
-            <div class="divLogo"></div>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link linksNavbar" aria-current="page" href="index.html">INÍCIO</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link linksNavbar" aria-current="page" href="">SOBRE NÓS</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link linksNavbar" aria-current="page" href="">MÚSICAS</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link linksNavbar" aria-current="page" href="">VOCACIONAL</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link linksNavbar" aria-current="page" href="">EVENTOS</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link linksNavbar" aria-current="page" href="">JUVENTUDE</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link linksNavbar" aria-current="page" href="">FORMAÇÕES</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link linksNavbar" aria-current="page" href="">FALE CONOSCO</a>
-                </li>
-            </div>
-            </div>
-            <div class="iconesContatos">
-                    <a style="color: gray;" href=""><i class="fa-brands fa-facebook fa-lg" ></i></a>
-                    <a style="color: gray;" href=""><i class="fa-brands fa-instagram fa-lg"></i></a>
-                    <a style="color: gray;" href=""><i class="fa-brands fa-whatsapp fa-lg"></i></a>
-                    <a style="color: gray;" href=""><i class="fa-solid fa-phone fa-lg"></i></a>
-                    <a style="color: gray;" href=""><i class="fa-solid fa-envelope fa-lg"></i></a>
-            </div>
-        </div>
-    </nav>
+    <section class="heroSection">
+        <!--<div class="imgHeroSection"></div> -->    
+        <nav class="navbar navbar-expand-lg ">
+            <div class="container-fluid">
+                <div class="divLogo">
+                    <img class="divLogo" src="images/logo_OD.png" alt="">
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link linksNavbar" aria-current="page" href="index.html">INÍCIO</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle linksNavbar" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            SOBRE NÓS
+                        </a>
+                        
+                        <ul class="dropdown-menu" style="background-color: transparent;
+                            color: black;
+                            border-color: transparent;">
+                            <li><a class="dropdown-item" href="#">MISSÕES</a></li>
+                            <li><a class="dropdown-item" href="#">ONDE ESTAMOS</a></li>
+                        </ul>
+                    </li>
 
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle linksNavbar" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            LOJA
+                        </a>
+                        
+                        <ul class="dropdown-menu" style="background-color: transparent;
+                            color: black;
+                            border-color: transparent;">
+                            <li><a class="dropdown-item" href="#">ARTIGOS RELIGIOSOS</a></li>
+                            <li><a class="dropdown-item" href="#">PASSAGENS/ROMARIAS</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link linksNavbar" aria-current="page" href="">MÚSICAS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link linksNavbar" aria-current="page" href="">VOCACIONAL</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link linksNavbar" aria-current="page" href="">EVENTOS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link linksNavbar" aria-current="page" href="">JUVENTUDE</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link linksNavbar" aria-current="page" href="">FORMAÇÕES</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link linksNavbar" aria-current="page" href="">FALE CONOSCO</a>
+                    </li>
+                </div>
+                </div>
+            </div>
+        </nav>
+        <div class="iconesContatos">
+                        <a style="color: gray;" href=""><i class="icone fa-brands fa-facebook fa-lg" ></i></a>
+                        <a style="color: gray;" href=""><i class="icone fa-brands fa-instagram fa-lg"></i></a>
+                        <a style="color: gray;" href=""><i class="icone fa-brands fa-whatsapp fa-lg"></i></a>
+                        <a style="color: gray;" href=""><i class="icone fa-solid fa-phone"></i></a>
+                        <a style="color: gray;" href=""><i class="icone fa-solid fa-envelope"></i></a>
+        </div>
+    </section>
+    
     <main>
+
+        <section class="carroselPrincipal">
+            <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                    <img src="images/62380407_2290861137702155_3653301928782096226_n.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                    <img src="images/romaria_nova.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                    <img src="images/romaria_maria_milza.jpg" class="d-block w-100" alt="...">
+                    </div>
+                </div>
+                </div>
+        </section>
+
+        <!-- <div class="imagemSobreOD"></div> -->
+         <img class="imagemSobreOD" style="max-width: 100%;" src="images/imagem_teste.png" alt="">
         <section class="sobreObraDeDeus">
             <h5 style="width: 100%; text-align: center; margin: 0;">Conheça a</h5>
             <h1 class="obraDeDeus">OBRA DE DEUS</h1>
             <p class="textoConhecaOD">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis aut doloribus eos illum eaque ipsa itaque nisi? Voluptatibus aperiam, dolore ipsa ad natus accusantium totam at, quam recusandae ullam magnam!Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis aut doloribus eos illum eaque ipsa itaque nisi? Voluptatibus aperiam, dolore ipsa ad natus accusantium totam at, quam recusandae ullam magnam!<br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis aut doloribus eos illum eaque ipsa itaque nisi? Voluptatibus aperiam, dolore ipsa ad natus accusantium totam at, quam recusandae ullam magnam!<br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis aut doloribus eos illum eaque ipsa itaque nisi? Voluptatibus aperiam, dolore ipsa ad natus accusantium totam at, quam recusandae ullam magnam!</p>
         </section>
 
-        <section class="vocacional">
-            <h1 class="gradient-weight-text myText" style="margin-bottom: 20px;">Vocacional</h1>
+        <section class="formacoes">
+            <h1 class="gradient-weight-text myText" style="margin-bottom: 20px;">Formações</h1>
             <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
             <div class="carousel-inner" style="height: 300px;">
                 <div class="carousel-item active">
@@ -91,12 +137,11 @@
             </div>
         </section>
         
-        <section class="formacoes">
-            <h1 class="gradient-weight-text myText">Formações</h1>
+        <section class="vocacional">
+            <h1 class="gradient-weight-text myText">Vocacional</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates dignissimos corrupti consequuntur, velit doloribus beatae vero incidunt temporibus deserunt fugit placeat eveniet ducimus. Doloribus voluptates nobis quibusdam facere minus nesciunt?</p>
             <div class="divBenfeitor"></div>
-            <div class="divBenfeitor"></div>
-            <div class="divBenfeitor"></div>
-            <button type="button" class="btnVerMais btn btn-warning">VER MAIS</button>
+            <button type="button" class="btnVerMais btn btn-warning">SAIBA MAIS</button>
         </section>
 
         <section class="benfeitor">
@@ -139,7 +184,9 @@
         </section>
 
         <footer>
-            <div class="divLogo logoFooter"></div>
+            <div class="divLogo">
+                    <img style="margin-left: 10px;" class="divLogo" src="images/logo_OD.png" alt="">
+                </div>
             <div class="iconesContatosFooter">
                         <a style="color: gray;" href=""><i class="fa-brands fa-facebook fa-lg" ></i></a>
                         <a style="color: gray;" href=""><i class="fa-brands fa-instagram fa-lg"></i></a>

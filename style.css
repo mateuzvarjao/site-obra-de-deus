@@ -1,4 +1,4 @@
-body {
+body, html {
     padding: 0;
     margin: 0;
     font-family: 'Quicksand', sans-serif;
@@ -20,18 +20,22 @@ h1 {
 }
 
 section {
-    margin: 100px 0;
 }
 
 nav {
-    background: #FFFFFF;
+    background: transparent;
 }
 
 main{
     background: #FFFFFF;  
-    background: -webkit-linear-gradient(to bottom, #FFFFFF, #203ED4, #000000);  
-    background: linear-gradient(to bottom, #FFFFFF, #203ED4, #000000);   
+       
     /* #F29492, #114357 */
+}
+
+.fundadores {
+    padding: 40px 0;
+    background: -webkit-linear-gradient(to bottom, #203ED4, #000000);  
+    background: linear-gradient(to bottom, #203ED4, #000000);
 }
 
 .divFundadores {
@@ -65,12 +69,9 @@ main{
     color: goldenrod;
 }
 
-.divLogo {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    border: 1px solid black;
-    margin-left: 50px;
+.divLogo > img {
+    width: 100px;
+    height: 100px;
     margin-right: 150px;
 }
 
@@ -94,29 +95,102 @@ main{
     }
 
     .navbar{
+        width: 100%;
+        padding: 10px;
         display: flex;
-        flex-wrap: wrap;
+        /* position: absolute;
+        top: 0; */
+        /* flex-wrap: wrap; */
+    /* justify-content: space-around; */
     }
 
     .divLogo{
         margin-right: 0;
-        margin-left: 20px;
     }
 
     .navbar-collapse {
         margin: 20px 0;
+        /* color: red; */
+        background-color: #dcdbdb79;
+        /* width: 50%; */
+    }
+
+    .navbar-nav {
+        /* align-items: end;
+        margin-right: 10px; */
+
+        align-items: start;
+        margin-left: 10px;
     }
 
     .linksNavbar {
         margin: 0;
     }
+        
+    .iconesContatos{
+        z-index: 222;
+        width: 20px;
+        position: absolute;
+        right: 45px;
+        top: 120px;
+    }
 
-    .iconesContatos {
-        margin-top: 20px;
-        gap: 10px;
-        display: flex;
+    .iconesContatos > a {
+        padding: 10px;
+        background-color: #dcdbdb79;
+        border-radius: 5px;
+    }
+    
+    .icone {
+        margin: 25px 0;
+        color: #051048;
+        opacity: 0.6;
+    }
+    
+    .fa-envelope, .fa-phone {
+        margin: 18px 0;
+    }
+
+    /* .heroSection {
+        position: relative;
         width: 100%;
-        justify-content: center;
+        height: 70vh;
+        color: red;
+        top: 0;
+    }
+    
+    .imgHeroSection {
+        width: 100%;
+        height: 100%;
+        background-image: url(images/hero.jpeg);
+        background-position: center;
+        background-size: cover;
+    } */
+
+    .carroselPrincipal {
+        margin-top: 20px;
+    }
+
+    .carousel-item {
+        max-height: 430px;
+    }
+
+    .imagemSobreOD{
+        max-width: 100%;
+        opacity: 0;
+        transform: scale(0.9);
+        animation: aparecer 1.5s ease-in forwards;
+    }
+
+    @keyframes aparecer {
+      from {
+        opacity: 0;
+        transform: scale(0.9);
+      }
+      to {
+        opacity: 1;
+        transform: scale(1);
+      }
     }
 
     .sobreObraDeDeus {
@@ -124,6 +198,7 @@ main{
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
+        margin: 20px;
     }
     
     .sobreObraDeDeus > h1 { 
@@ -144,7 +219,6 @@ main{
     .textoConhecaOD {
         font-weight: 600;
         width: 100%;
-        margin: 0 20px;
         text-align: justify;
     }
 
@@ -174,11 +248,11 @@ main{
         margin-bottom: 20px;
         width: 94%;
         height: 200px;
-        border: 1px solid white;
+        border: 1px solid black;
     }
 
     .videos {
-        color: #ffffff;
+        color: black;
     }
 
     .videosYoutube {
@@ -198,16 +272,23 @@ main{
         margin: 20px 0;
     }
     
-    .formacoes {
+    .vocacional {
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
+        margin-top: 40px;
+    }
+
+    .vocacional > p {
+        text-align: justify;
+        margin: 10px;    
     }
 
     .formacoes > h1 {
         color: #000000;
-        margin-bottom: 20px;
+        /* margin-bottom: 20px; */
     }
+
     
     .vocacional > h1 {
         color: #000000;
@@ -220,7 +301,7 @@ main{
     }
     
     .logoFooter {
-        border: 1px solid white;
+        border: 1px solid black;
     }
 
     .iconesContatosFooter {
