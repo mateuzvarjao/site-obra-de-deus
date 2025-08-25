@@ -1,7 +1,11 @@
-body, html {
+body {
     padding: 0;
     margin: 0;
     font-family: 'Quicksand', sans-serif;
+}
+
+html {
+    margin-top: -20px;
 }
 
 .obraDeDeus {
@@ -9,17 +13,16 @@ body, html {
 }
 
 .gradient-weight-text {
+    background-image: linear-gradient( 100.1deg,  rgba(217,157,38,1) 16.8%, rgba(247,213,110,1) 77.3% );
     font-family: 'Inter', sans-serif; 
     font-size: 2rem;
     letter-spacing: 2px;
-    text-align: center;
+    text-align: start;
+    padding-left: 10px;
 }
 
 h1 {
     margin: 0;
-}
-
-section {
 }
 
 nav {
@@ -34,8 +37,7 @@ main{
 
 .fundadores {
     padding: 40px 0;
-    background: -webkit-linear-gradient(to bottom, #203ED4, #000000);  
-    background: linear-gradient(to bottom, #203ED4, #000000);
+    background-image: linear-gradient( 177.6deg,  rgba(20,0,113,1) 15.3%, rgba(1,0,62,1) 91.3% );
 }
 
 .divFundadores {
@@ -96,8 +98,9 @@ main{
 
     .navbar{
         width: 100%;
-        padding: 10px;
+        padding: 20px 10px;
         display: flex;
+        background-image: linear-gradient( 177.6deg,  rgba(20,0,113,1) 15.3%, rgba(1,0,62,1) 91.3% );
         /* position: absolute;
         top: 0; */
         /* flex-wrap: wrap; */
@@ -111,7 +114,7 @@ main{
     .navbar-collapse {
         margin: 20px 0;
         /* color: red; */
-        background-color: #dcdbdb79;
+        /* background-color: #dcdbdb79; */
         /* width: 50%; */
     }
 
@@ -125,6 +128,7 @@ main{
 
     .linksNavbar {
         margin: 0;
+        color: white;
     }
         
     .iconesContatos{
@@ -240,7 +244,7 @@ main{
     .benfeitor {
         color: #000000;
         text-align: center;
-        margin-top: 100px;
+        margin-top: 40px;
     }
     
     .divBenfeitor {
@@ -269,14 +273,13 @@ main{
 
     .btnVerMais {
         width: 50%;
-        margin: 20px 0;
+        margin: 0 auto;
     }
     
     .vocacional {
-        display: flex;
-        justify-content: center;
         flex-wrap: wrap;
         margin-top: 40px;
+        text-align: start;
     }
 
     .vocacional > p {
