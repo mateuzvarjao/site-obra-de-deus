@@ -15,7 +15,7 @@ html {
 .gradient-weight-text {
     background-image: linear-gradient( 100.1deg,  rgba(217,157,38,1) 16.8%, rgba(247,213,110,1) 77.3% );
     font-family: 'Inter', sans-serif; 
-    font-size: 2rem;
+    font-size: 1rem;
     letter-spacing: 2px;
     text-align: start;
     padding-left: 10px;
@@ -74,7 +74,6 @@ main{
 .divLogo > img {
     width: 100px;
     height: 100px;
-    margin-right: 150px;
 }
 
 .linksNavbar {
@@ -105,6 +104,20 @@ main{
         top: 0; */
         /* flex-wrap: wrap; */
     /* justify-content: space-around; */
+    }
+
+    .nav-item{
+        border-bottom: 1px solid white;
+        width: 85%;
+        display: flex;
+    }
+
+    .dropdown-item {
+        border-bottom: 1px solid white;
+    }
+
+    .dropdown-menu {
+        width: 100%;
     }
 
     .divLogo{
@@ -141,7 +154,7 @@ main{
 
     .iconesContatos > a {
         padding: 10px;
-        background-color: #dcdbdb79;
+        background-color: #dcdbdbad;
         border-radius: 5px;
     }
     
@@ -176,7 +189,7 @@ main{
     }
 
     .carousel-item {
-        max-height: 430px;
+        max-height: 410px;
     }
 
     .imagemSobreOD{
@@ -229,7 +242,7 @@ main{
     .fundadores > h1 {
         text-align: center;
         margin-bottom: 20px;
-        
+        font-size: 1.75rem;
     }
 
     .divFundadores {
@@ -244,47 +257,113 @@ main{
     .benfeitor {
         color: #000000;
         text-align: center;
-        margin-top: 40px;
+        margin: 40px 0;
+        /* padding: 40px 0;
+        background-image: linear-gradient( 89.2deg,  rgba(255,255,255,1) -1.3%, rgba(253,109,38,1) 281.6% ); */
+    }
+
+    .benfeitor > h1 {
+        margin-bottom: 20px;
     }
     
-    .divBenfeitor {
+    /* .benfeitor > h1 {
+        background-image: none;
+        font-size: 2em;
+        text-align: center;
+    } */
+    
+    .divBenfeitor, .divFormacoes {
         margin: 0 auto;
         margin-bottom: 20px;
         width: 94%;
         height: 200px;
         border: 1px solid black;
     }
+    
+    .divFormacoes {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    
+    .divFormacao {
+        width: 94%;
+        margin: 0 auto;
+    }
+    
+    .divFormacao > h1 {
+        font-weight: bold;
+        font-size: 1.5em;
+        padding-bottom: 10px;
+    }
+
+    .divFormacao > p:last-child {
+        margin-bottom: 0;
+
+    }
+
+    .formacoes > p {
+        margin-bottom: 20px;
+    }
 
     .videos {
         color: black;
+        margin: 40px 0;
+    }   
+
+    .imgOndeEstamos {
+        border-radius: 50%;
+        height: 200px;
+    }
+
+    .ondeEstamos > h1 {
+        margin: 40px 0;
+    }
+
+    .nomeCasas {
+        text-align: center;
+        margin-top: 10px;
+        font-weight: bold;
+    }
+
+    .btnYoutube {
+        color: red;
+        background-image: linear-gradient( 174.2deg,  rgba(255,244,228,1) 7.1%, rgba(240,246,238,1) 67.4% );
+        border: none;
+        font-size: 15px;
     }
 
     .videosYoutube {
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
-        margin-bottom: 50px;
+        margin-bottom: 30px;
     }
 
     .videos > h1 {
-        text-align: center;
-        margin-bottom: 50px;
+        margin: 20px 0;
     }
 
     .btnVerMais {
         width: 50%;
+        display: flex;
+        justify-content: center;
         margin: 0 auto;
     }
     
     .vocacional {
         flex-wrap: wrap;
-        margin-top: 40px;
+        margin: 40px 0;
         text-align: start;
     }
 
     .vocacional > p {
         text-align: justify;
-        margin: 10px;    
+        margin: 0 10px;    
+    }
+    
+    .vocacional > h1 {
+        margin-bottom: 20px;
+        color: #000000;
     }
 
     .formacoes > h1 {
@@ -292,15 +371,10 @@ main{
         /* margin-bottom: 20px; */
     }
 
-    
-    .vocacional > h1 {
-        color: #000000;
-    }
-
     footer {
         display: flex;
         justify-content: space-between;
-        padding-bottom: 50px;
+        padding-bottom: 0 10px 50px 10px;
     }
     
     .logoFooter {
