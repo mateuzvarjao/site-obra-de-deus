@@ -327,19 +327,62 @@ main{
         font-size: 1.75rem;
     }
 
-    .divFundadores {
-        width: 150px;
-        height: 150px;
-        border-radius: 50%;
-        border: goldenrod solid 1px;
-        margin: 0 auto;
-        margin-bottom: 10px;
-    }
+    .divsCarrossel {
+  display: flex;
+  gap: 10px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  width: 95%;
+  margin-left: 10px;
+  scroll-behavior: smooth;
+}
+
+.divsCarrossel::-webkit-scrollbar {
+  display: none; /* esconde a barra de rolagem */
+}
+
+.divsCarrossel .item {
+  flex: 0 0 80%;
+  scroll-snap-align: start;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.divsCarrossel .conteudo {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  color: white;
+  background: gray; /* cor base caso não tenha nth-child */
+}
+
+/* Título abaixo da div colorida */
+.divsCarrossel .item h1 {
+  font-size: 1.2rem;
+  color: #333;
+  text-align: center;
+  margin-top: 8px;
+}
+
+/* Cores de exemplo */
+.divsCarrossel .item:nth-child(1) .conteudo { background: #ff6b6b; }
+.divsCarrossel .item:nth-child(2) .conteudo { background: #4ecdc4; }
+.divsCarrossel .item:nth-child(3) .conteudo { background: #1a535c; }
+.divsCarrossel .item:nth-child(4) .conteudo { background: #ffcc5c; color: #333; }
+
+
 
     .benfeitor {
+        margin: 40px 0;
+    }
+
+    .benfeitor > p {
         color: #000000;
         text-align: center;
-        margin: 40px 0;
         /* padding: 40px 0;
         background-image: linear-gradient( 89.2deg,  rgba(255,255,255,1) -1.3%, rgba(253,109,38,1) 281.6% ); */
     }
@@ -392,6 +435,10 @@ main{
         margin: 40px 0;
     }
 
+    .ondeEstamos {
+        margin: 40px 0;
+    }
+
     .imgOndeEstamos {
         border-radius: 50%;
         height: 200px;
@@ -438,7 +485,7 @@ main{
         text-align: start;
     }
 
-    .vocacional > p {
+    .vocacional > p, .fundadorSection > p {
         text-align: justify;
         margin: 0 10px;
     }
@@ -488,6 +535,22 @@ main{
         margin: 0 10px;
     }
 
+    .linha {
+        height: 2px;
+        background-image: linear-gradient( 100.1deg,  rgba(217,157,38,1) 16.8%, rgba(247,213,110,1) 77.3% );
+        width: 94%;
+        margin-bottom: 30px;
+        margin-left: 10px;
+    }
+
+    .tituloTeste {
+        margin-left: 10px;
+        font-family: 'Montserrat', sans-serif;
+        letter-spacing: 5.8px;  
+        font-size: 18px;
+        font-weight: bold;
+    }
+
     /* pagina Eventos */
 
     .eventosSection > p {
@@ -496,9 +559,18 @@ main{
         margin-bottom: 20px;
     }
 
-    .eventosSection > h2 {
-        color: #FFFFFF;
-        background-image: linear-gradient( 90.2deg,  rgba(1,47,95,1) -0.4%, rgba(56,141,217,1) 106.1% );
+    .titulosEventos {
+        background: linear-gradient(90.2deg, rgba(1,47,95,1) -0.4%, rgba(56,141,217,1) 106.1%);
+        -webkit-background-clip: text; /* recorta o fundo no formato do texto */
+        -webkit-text-fill-color: transparent; /* deixa o texto transparente pra ver o fundo */
+        background-clip: text; /* para compatibilidade */
+        color: transparent; /* fallback */
+        font-family: 'Montserrat', sans-serif;
+        font-size: 30px;
+        letter-spacing: 0px;
+        font-weight: bold;
+        margin-left: 10px;
+        margin-top: 25px;
     }
 
     /* onde estamos */
